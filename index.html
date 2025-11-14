@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Living Reviews Dashboard</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>FlexLiving <br>  Dashboard</h2>
+    <a href="./index.html">Home</a>
+    <a href="./property.html">Published Reviews</a>
+    <a href="./index.html">Reviews</a>
+    
+    <a href="#">Profile</a>
+  </div>
+
+  <div class="main">
+    <h1>Reviews Dashboard</h1>
+<h3>Property Performance</h3>
+    <canvas id="performanceChart" height="30"></canvas>
+
+  <br>
+    <div class="filters">
+      <select id="listingFilter">
+        <option value="">All Listings</option>
+      </select>
+      <select id="typeFilter">
+        <option value="">All Type</option>
+      </select>
+      <select id="channelFilter">
+        <option value="">All Channels</option>
+      </select>
+      <input type="date" id="dateFilter">
+      <input type="range" id="ratingFilter" min="0" max="10" value="0">
+      
+      <span id="ratingValue">0+</span>
+      <p>Rating</p>
+    </div>
+
+    <table id="reviewsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Listing</th>
+          <th>Guest</th>
+          <th>Rating</th>
+          <th>Category Ratings</th>
+          <th>Review</th>
+          <th>Date</th>
+          <th>Approved</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be populated dynamically -->
+      </tbody>
+    </table>
+
+    </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
