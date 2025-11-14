@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const ENV = 'dev';
-  const BASE_URL = ENV === 'dev' 
-    ? 'http://localhost:5000/api/review' 
-    : 'https://your-production-domain.com/api/review';
+ const BASE_URL = 'https://flex-living-review-dashboard-wfga.onrender.com/api/review';
+
 
   const propertiesContainer = document.getElementById("propertiesContainer");
   if (!propertiesContainer) return;
