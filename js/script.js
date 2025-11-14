@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // ---------- Config ----------
-  const ENV = 'dev'; // 'dev' or 'prod'
-  const BASE_URL = ENV === 'dev' ? 'http://localhost:5000/api/review' : 'https://your-production-domain.com/api/review';
+  const ENV = 'prod'; // 'dev' or 'prod'
+  const BASE_URL = ENV === 'dev' ? 'http://localhost:5000/api/review' : 'https://flex-living-review-dashboard-wfga.onrender.com/api/review';
 
   // ---------- Grab DOM elements ----------
   const tableBody = document.querySelector("#reviewsTable tbody");
